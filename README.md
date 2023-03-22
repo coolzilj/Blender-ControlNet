@@ -23,6 +23,7 @@ Please refer to the installation instructions from [Mikubill/sd-webui-controlnet
 **Notes**
 
 - In new version of Mikubill/sd-webui-controlnet, you need to enable `Allow other script to control this extension` in settings for API access.
+- To enable Multi ControlNet, change `Multi ControlNet: Max models amount (requires restart)` in the settings. Note that you will need to restart the WebUI for changes to take effect.
 
 ### 3. Copy and paste the `multicn.py` code into your blender Scripting pane.
 
