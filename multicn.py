@@ -33,11 +33,11 @@ def render_complete_handler(scene):
 
 def send_to_api(scene):
     # prepare filenames
-    # FIXME: if you found nothing in image folder, navigate to the first frame
-    comp_output_canny_filename = "canny0000.png"
-    comp_output_depth_filename = "depth0000.png"
-    comp_output_bone_filename = "bone0000.png"
-    comp_output_seg_filename = "seg0000.png"
+    frame_num = f"{bpy.context.scene.frame_current}".zfill(4)
+    comp_output_canny_filename = "canny" + frame_num + ".png"
+    comp_output_depth_filename = "depth" + frame_num + ".png"
+    comp_output_bone_filename = "bone" + frame_num + ".png"
+    comp_output_seg_filename = "seg" + frame_num + ".png"
 
     timestamp = int(time.time())
     before_output_canny_filename = f"{timestamp}-1-canny-before.png"

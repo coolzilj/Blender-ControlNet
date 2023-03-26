@@ -156,3 +156,7 @@ seg_cn_units = {
 ## Bonus
 
 To create 150 ControlNet segmentation colors materials, run `seg.py`. Check out this [tweet](https://twitter.com/Songzi39590361/status/1631190450710409216) for instructions.
+
+## Todo
+
+- [ ] animation support
